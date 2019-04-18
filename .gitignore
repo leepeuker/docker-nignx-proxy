@@ -1,4 +1,4 @@
-/data/certbot
+/data/certs
 /data/conf.d/*.conf
 /data/htpasswd/*
 !/data/htpasswd/.gitkeep

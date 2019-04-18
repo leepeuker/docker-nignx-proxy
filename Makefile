@@ -1,5 +1,6 @@
 up: network_up
 	docker-compose up -d
+	docker start webproxy-dockergen
 
 down:
 	docker-compose down
