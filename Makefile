@@ -1,3 +1,4 @@
+# Container management
 up: network_up
 	docker-compose up -d
 	docker start webproxy-dockergen
@@ -16,3 +17,15 @@ network_up:
 
 network_down:
 	docker network remove webproxy || true
+
+
+# Container interaction
+#######################
+logs_nginx:
+	docker logs -f webproxy-nginx
+
+logs_dockergen:
+	docker logs -f webproxy-dockergen
+
+logs_letsencyrpt:
+	docker logs -f webproxy-letsencrypt

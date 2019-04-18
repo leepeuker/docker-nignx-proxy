@@ -1,4 +1,7 @@
+/.env
+!/.env.*
 /data/certs
 /data/conf.d/*.conf
 /data/htpasswd/*
 !/data/htpasswd/.gitkeep
+/data/mysql
