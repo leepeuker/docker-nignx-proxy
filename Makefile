@@ -1,5 +1,4 @@
 up: network_up
-	curl https://raw.githubusercontent.com/jwilder/nginx-proxy/master/nginx.tmpl > nginx.tmpl
 	docker-compose up -d
 
 down:

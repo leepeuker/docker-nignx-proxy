@@ -1,2 +1,4 @@
-/data/
-/nginx.tmpl
+/data/certbot
+/data/conf.d/*.conf
+/data/htpasswd/*
+!/data/htpasswd/.gitkeep
