@@ -1,3 +1,5 @@
+include .env
+
 # Container management
 ######################
 up: network_up
@@ -22,6 +24,9 @@ network_down:
 
 # Container interaction
 #######################
+connect_mysql_cli:
+	docker exec -it webproxy-mysql bash -c "mysql -uroot -p${MYSQL_ROOT_PASSWORD}"
+
 logs_nginx:
 	docker logs -f webproxy-nginx
 
@@ -30,3 +35,6 @@ logs_dockergen:
 
 logs_letsencyrpt:
 	docker logs -f webproxy-letsencrypt
+
+logs_mysql:
+	docker logs -f webproxy-mysql
